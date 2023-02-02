@@ -1,0 +1,8 @@
+CHACHA_MOD_DIR := $(USERMOD_DIR)
+
+# Add all C files to SRC_USERMOD.
+SRC_USERMOD += $(CHACHA_MOD_DIR)/chacha.c
+SRC_USERMOD += $(CHACHA_MOD_DIR)/chacha_test.c
+SRC_USERMOD += $(CHACHA_MOD_DIR)/chacha_module.c
+
+CFLAGS_USERMOD += -I$(CHACHA_MOD_DIR)
